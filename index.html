@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Partiu BH?</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="img/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="img/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="img/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+    </head>
+    <body
+        onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'
+    >
+        <!-- Barra de Navegação-->
+        <nav class="navbar glass" style="height: 70px">
+            <span>
+                <a href="#inicio" style="display: flex; align-items: center">
+                    <h1 class="logo">&nbsp;Partiu BH?</h1>
+                    <img
+                        class="img2"
+                        src="./img/logo.png"
+                        width="60"
+                        style="margin: -25px -20px -25px -10px"
+                    /></a>
+            </span>
+            <ul class="nav-links">
+                <li>
+                    <a href="#inicio" id="pri" class="active cir_border">Ínicio</a>
+                </li>
+                <li><a href="#historia" id="sec" class="cir_border">História</a>
+                </li>
+                <li>
+                    <a href="#conhecer" id="tri" class="cir_border">Conhecer</a>
+                </li>
+                <li>
+                    <a href="#ondeir" id="quad" class="cir_border">Onde Ir</a>
+                </li>
+                <li><a href="#informacoes" id="quint" class="cir_border">Informações</a>
+                </li>
+                <li><a href="#contribution" id="hex" class="cir_border">Criadores</a>
+                </li>
+            </ul>
+            <img src="./img/menu-btn.png" alt="" class="menu-btn" />
+        </nav>
+        <!--Barra de Navegação-->
+
+        <header id="inicio">
+            <div class="header-content">
+                <h2 id="quote">PLANEJANDO VIAJAR PARA MINAS GERAIS?</h2>
+                <div class="line"></div>
+                <h1>CONHEÇA BELO HORIZONTE</h1>
+                <a
+                    href="#historia"
+                    class="ctn"
+                    onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'
+                    >Explore mais</a
+                >
+            </div>
+        </header>
+
+        <!--História-->
+        <section class="historia" id="historia">
+            <div class="container">
+                <div class="title">
+                    <h1 class="dark">Conhecendo as Raízes</h1>
+                    <div class="line"></div>
+                </div>
+            <div class="row">
+                <article class="card col">
+                    <img class="card-img expandir" src="img/img1.png" />
+                    <h4 class="dark">Locais Históricos</h4>
+                    <p class="font-color">
+                        Venha conhecer de perto um pouco mais dos 
+                        principais locais que contam a rica história
+                        da cidade.
+                    </p>
+                    <br>
+                    <a href="view/historia-e-cultura.html" class="ctn">Todos detalhes</a>
+                </article>
+                <article class="card col">
+                    <img class="expandir" src="./img/img2.jpg" />
+                    <h4 class="dark">História e Cultura</h4>
+                    <p class="font-color">
+                        Descubra os marcos que moldaram a história da cidade 
+                        e mergulhe nas tradições fascinantes da cultura belo
+                        horizontina.
+                    </p>
+                    <br>
+                    <a href="view/historia-e-cultura.html" class="ctn">Todos detalhes</a>
+                </article>
+                <article class="card col">
+                    <img class="expandir" src="./img/img3.jpg" />
+                    <h4 class="dark">Natureza e Ecoturismo</h4>
+                    <p class="font-color">
+                        Descubra a riqueza natural de BH. 
+                        Explore trilhas, parques e reservas que destacam a 
+                        biodiversidade e a beleza do ecossistema.
+                    </p>
+                    <br>
+                    <a href="#" class="ctn">Todos detalhes</a>
+                </article>
+            </div>
+            </div>
+        </section>
+        <!--História-->
+
+        <!--Conhecer-->
+        <section class="conhecer" id="conhecer">
+            <div class="conhecer-content">
+                <h1> PARA QUEM É BH? </h1>
+                <div class="line"></div>
+                <p>
+                    Belo Horizonte é um destino ideal para quem busca novas experiências. <br />
+                    Aqui, você encontrará paisagens deslumbrantes, pratos únicos e deliciosos que só se encontra na culinária mineira, além de uma vida noturna vibrante, repleta de opções de entretenimento.
+                    <br>
+                    <br />Vindo a BH sua viagem certamente será inesquecível de infinitas formas.
+                </p>
+                <br>
+                <a href="#ondeir" class="ctn">Explore mais</a>
+            </div>
+        </section>
+        <!--Conhecer-->
+
+        <!-- Onde Ir -->
+        <section class="ondeir" id="ondeir">
+            <div class="container">
+                <div class="title">
+                    <h1 class="dark">Explorando a Cidade</h1>
+                    <div class="line"></div>
+                </div>
+                <div class="image-gallery">
+                    <div class="single-galeria">
+                        <a href="view/pontos-turisticos.html">
+                            <img src="./img/explorar-pontoturistico.jpg" alt="Pontos turísticos" />
+                            <div class="info">
+                                <h1>Pontos Turísticos</h1>
+                                <p>Conheça os lugares imperdíveis de visitar na capital mineira</p>
+                                <a href="view/pontos-turisticos.html">Ver Mais</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="single-galeria">
+                        <a href="view/bares-e-botecos.html">
+                            <img src="./img/explorar-boteco.png" alt="Bares e Botecos" />
+                            <div class="info">
+                                <h1>Bares e Botecos</h1>
+                                <p>Venha entender o motivo de BH ser a capital dos botecos e bares com as melhores indicações</p>
+                                <a href="view/bares-e-botecos.html">Ver Mais</a>
+                            </div>
+                        </a>
+                    </div>  
+                    <div class="single-galeria">
+                        <a href="view/restaurantes-mineiros.html">
+                            <img src="./img/explorar-restaurante.jpg" alt="Restaurantes" />
+                            <div class="info">
+                                <h1>Restaurantes Mineiros</h1>
+                                <p>Prove da melhor culinária brasileira nos melhores restaurantes </p>
+                                <a href="view/restaurantes-mineiros.html">Ver Mais</a>
+                            </div>
+                        </a>
+                    </div>                                     
+                    <div class="single-galeria">
+                        <a href="view/pontos-turisticos.html">
+                            <img src="./img/explorar-mercado.png" alt="Mercados Locais" />
+                            <div class="info">
+                                <h1>Mercados Locais</h1>
+                                <p>Veja a reunião do melhor de Minas, comidas típicas, artesanato, cultura e a tradição em um só lugar</p>
+                                <a href="view/pontos-turisticos.html">Ver Mais</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="single-galeria">
+                        <a href="#">
+                            <img src="./img/explorar-feira.jpeg" alt="Feiras Livres" />
+                            <div class="info">
+                                <h1>Feiras Livres</h1>
+                                <p>Desfrute das principais feiras para aproveitar muita arte, gastronomia e cultura mineira</p>
+                                <a href="#">Ver Mais</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="single-galeria">
+                        <a href="#">
+                            <img src="./img/explorar-cafeteria.png" alt="Cafeterias e Padarias" />
+                            <div class="info">
+                                <h1>Cafeterias e Padarias</h1>
+                                <p>Se é um amante de um bom café não pode deixar de visitar esses espaços</p>
+                                <a href="#">Ver Mais</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--tours-->
+
+        <!-- Informações -->
+    <section class="informacoes" id="informacoes">
+        <div class="container">
+            <div class="title">
+                <h1 class="dark">Informações</h1>
+                <div class="line"></div>
+            </div>
+            <section class="info-grid">
+                <div class="grid-item">
+                    <a href="#">
+                        <img src="img/img-prefeitura.png" alt="Prefeitura">
+                        <div class="info">
+                            <p>BELOTUR - Empresa Municipal de Turismo de Belo Horizonte</p>
+                        </div>
+                    </a>
+                </div> 
+                <div class="grid-item">
+                    <a href="#">
+                        <img src="img/img-policia.jpg" alt="Polícia">
+                        <div class="info">
+                            <p>Delegacias de Polícia</p>
+                        </div>
+                    </a>
+                </div> 
+                <div class="grid-item">
+                    <a href="#">
+                        <img src="img/img-hospital.jpg" alt="Hospitais">
+                        <div class="info">
+                            <p>Hospitais</p>
+                        </div>
+                    </a>
+                </div> 
+            </section>
+        </div>
+    </section>
+    <!-- Informações -->
+
+    <!-- Criadores -->
+    <section class="contributors" id="contribution">
+        <div class="title2">
+            <h1 class="dark">Criadores</h1>
+            <div class="line"></div>
+        </div>
+        <div class="concard">
+            <img
+                src="https://github.com/andradezerd.png"
+                alt="profile-picture"
+                class="pfp"
+            />
+            <div class="text">
+                <h1>João Andrade</h1>
+            </div>
+            <div class="logolink">
+                <a href="https://github.com/andradezerd" target="_blank"
+                    ><img
+                        src="img/GitHub120px.png"
+                        alt="Github-Logo"
+                        class="github-logo"
+                /></a>
+            </div>
+        </div>
+
+
+        <div class="concard">
+            <img
+                src="https://github.com/jordancardek.png"
+                alt="profile-picture"
+                class="pfp"
+            />
+            <div class="text">
+                <h1>Jordan Cardek</h1>
+            </div>
+            <div class="logolink">
+                <a href="https://github.com/jordancardek" target="_blank"
+                    ><img
+                        src="img/GitHub120px.png"
+                        alt="Github-Logo"
+                        class="github-logo"
+                /></a>
+            </div>
+        </div>
+
+        <div class="concard">
+            <img
+                src="https://github.com/thaisnonato.png"
+                alt="profile-picture"
+                class="pfp"
+            />
+            <div class="text">
+                <h1>Thais Nonato</h1>
+            </div>
+            <div class="logolink">
+                <a href="https://github.com/thaisnonato" target="_blank"
+                    ><img
+                        src="img/GitHub120px.png"
+                        alt="Github-Logo"
+                        class="github-logo"
+                /></a>
+            </div>
+        </div>
+
+        <div class="concard">
+            <img
+                src="https://github.com/felipe1gx.png"
+                alt="profile-picture"
+                class="pfp"
+            />
+            <div class="text">
+                <h1>Felipe Xavier</h1>
+            </div>
+            <div class="logolink">
+                <a href="https://github.com/felipe1gx" target="_blank"
+                    ><img
+                        src="img/GitHub120px.png"
+                        alt="Github-Logo"
+                        class="github-logo"
+                /></a>
+            </div>
+        </div>
+
+        <div class="concard">
+            <img
+                src="https://github.com/caduhdeveloper.png"
+                alt="profile-picture"
+                class="pfp"
+            />
+            <div class="text">
+                <h1>Carlos Eduardo</h1>
+            </div>
+            <div class="logolink">
+                <a href="https://github.com/caduhdeveloper" target="_blank"
+                    ><img
+                        src="img/GitHub120px.png"
+                        alt="Github-Logo"
+                        class="github-logo"
+                /></a>
+            </div>
+        </div>  
+    </section>
+        <!-- Criadores -->
+
+        <!-- Roda pé -->
+        <footer>
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <h1>Partiu BH?</h1>
+                    <p>Encantos, Sabores e Histórias em Cada Esquina!</p>
+    
+                    <div id="footer_social_media">
+                        <a href="#" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+    
+                        <a href="#" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+    
+                        <a href="#" class="footer-link" id="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <ul class="footer-list">
+                    <li>
+                        <h3>Ajuda</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Mapa</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Saúde</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Segurança</a>
+                    </li>
+                </ul>
+    
+                <ul class="footer-list">
+                    <li>
+                        <h3>Assuntos</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Notícias</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Agenda de Eventos</a>
+                    </li>
+                </ul>
+    
+                <div id="footer_subscribe">
+                    <h3>Inscreva-se</h3>
+    
+                    <p>
+                        Insira seu e-mail abaixo para ser
+                        notificado sobre novidades e eventos
+                    </p>
+    
+                    <div id="input_group">
+                        <input type="email" id="email">
+                        <button>
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="footer_copyright">
+                &#169
+                2024 all rights reserved
+            </div>
+        </footer>
+        <!-- Roda pé -->
+
+        <script>
+            const menuBtn = document.querySelector(".menu-btn");
+            const navlinks = document.querySelector(".nav-links");
+
+            menuBtn.addEventListener("click", () => {
+                navlinks.classList.toggle("mobile-menu");
+            });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
